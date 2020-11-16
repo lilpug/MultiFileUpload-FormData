@@ -1,0 +1,43 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="col-8 offset-2">
+    <div class="text-center">
+        <h1 class="display pt-5 pb-5">File Upload Example</h1>
+    </div>
+</div>
+
+<div class="col-6 offset-3">
+    <form id="upload-form">
+        <div id="form-group">
+            <div class="group-item card p-3 mb-3">
+                <div class="row">
+                    <button type="button" class="close text-right col-1 offset-10">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+
+                <div class="form-group">
+                    <label for="file">File:</label>
+                    <input type="file" class="file form-control" name="file" />
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <input type="text" class="description form-control" name="description" value="" />
+                </div>
+
+                <div class="form-group">
+                    <label for="price">Price:</label>
+                    <input type="number" class="price form-control" name="price" step="any" />
+                </div>
+            </div>            
+        </div>
+
+        <div class="pt-2">
+            <input type="button" class="btn btn-primary" id="add-more" value="Add More" />
+            <input type="submit" class="btn btn-success" id="submit" value="Save" />
+        </div>
+    </form>
+</div>
